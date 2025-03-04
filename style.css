@@ -10,11 +10,19 @@ body{
 
 
 /*formatting*/
+.header{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    justify-content: space-between;
+    background-color: #121439;
+}
 
 .logo{
     color: #B5C7E8;
     font-size: 37px;
     font-weight: 100;
+
     display: flex;
     margin-left: 7%;
     margin-top: -20px;
@@ -30,4 +38,25 @@ body{
 .logo-text2{
     margin-left: -3px;
     margin-top:60px;
+}
+
+.nav-bar{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+
+    width: 50%;
+    margin-top: 40px;
+    margin-right: 120px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #737F8E;
+    font-family: "Chonburi", serif;
+    font-size: 20px;
+}
+
+p{
+
 }
