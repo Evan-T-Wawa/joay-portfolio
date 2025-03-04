@@ -1,0 +1,33 @@
+body{
+    background-color: #121439;
+}
+
+/*fonts*/
+.pecita{
+    font-family: 'Pecita', sans-serif;
+}
+
+
+
+/*formatting*/
+
+.logo{
+    color: #B5C7E8;
+    font-size: 37px;
+    font-weight: 100;
+    display: flex;
+    margin-left: 7%;
+    margin-top: -20px;
+}
+
+.logo-star{
+    width: 30px;
+    height: 35px;
+    margin-top: 62px;
+    margin-left: 2px;
+}
+
+.logo-text2{
+    margin-left: -3px;
+    margin-top:60px;
+}
