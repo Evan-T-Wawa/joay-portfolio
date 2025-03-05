@@ -39,6 +39,7 @@ body{
     justify-content: space-between;
     background-color: #121439;
     height: 95px;
+    z-index: 99;
 }
 
 .logo{
@@ -48,6 +49,10 @@ body{
     display: flex;
     margin-left: 7%;
     margin-top: -30px;
+}
+
+.logo-text-small{
+    display: none;
 }
 
 .logo-star{
@@ -69,7 +74,7 @@ body{
 
     width: 50%;
     margin-top: 40px;
-    margin-right: 120px;
+    margin-right: 8%;
 }
 
 .nav-item{
@@ -164,4 +169,60 @@ body{
     50% { transform: translateY(0px) }
     75% { transform: translateY(10px) }
     100% { transform: translateY(0) }
+  }
+
+  /*small screen version*/
+
+  @media screen and (max-width: 1280px) {
+    .logo-text-large{
+        display: none;
+    }
+
+    .logo-text-small{
+        display: block;
+    }
+
+    .logo{
+        margin-top: -35px;
+    }
+
+    .logo-star{
+        margin-left: -7px;
+        margin-top: 73px;
+    }
+
+    .logo-text2{
+        margin-left: -8px;
+        margin-top:78px;
+    }
+
+    .nav-bar{
+        width: 70%;
+        margin-right: 8%;
+    }
+
+    .title{
+        margin-top: 10px;
+    }
+
+    .hi{
+        top: 110px; left: 80px;
+        font-size: 40px;
+    }
+
+    .title-text{
+        font-size: 160px;
+    }
+
+    .title-star{
+        top: -155px; left: 620px;
+    }
+
+  }
+
+  @media screen and (max-width: 800px){
+    body{
+        background-color: white;
+    }
+
   }
