@@ -10,6 +10,9 @@ body{
 .Chonburi{
     font-family: "Chonburi", serif;
 }
+.Courier{
+    font-family: "Courier Prime", monospace;
+}
 
 /*colour*/
 .blue{
@@ -77,7 +80,7 @@ body{
 .title{
     width: 700px;
     margin: auto;
-    margin-top: 170px;
+    margin-top: -20px;
 }
 
 .title-text{
@@ -89,13 +92,18 @@ body{
 
 .hi{
     position: relative;
+    top: 135px; left: -45px;
     font-size: 35px;
 }
 
 .title-star{
     position: relative;
     width: 32px;
+    top: -165px; left: 640px;
 }
 
 .slogan{
+    justify-self: center;
+    font-size: 20px;
+    margin-top: -60px;
 }
