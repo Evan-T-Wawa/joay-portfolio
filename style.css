@@ -107,3 +107,61 @@ body{
     font-size: 20px;
     margin-top: -60px;
 }
+
+.title-arrow{
+    position: relative;
+    left: 320px;
+    width: 50px;
+    margin-top: -10px;
+    animation: spin 10s linear infinite;
+    animation-play-state: paused; 
+}
+
+/*nov bar animation*/
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #B5C7E8;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .hover-underline-animation.center::after {
+    transform-origin: bottom center;
+  }
+  
+  .hover-underline-animation.center:hover::after {
+    transform-origin: bottom center;
+  }
+
+  .nav-item:hover{
+    color: #B5C7E8;
+  }
+
+  /*arrow wobble*/
+
+  .title-arrow:hover {
+    animation-play-state: running;
+    animation-duration: 1.5s;
+  }
+
+  @keyframes spin {
+    0% { transform: translateY(0) }
+    25% { transform: translateY(5px) }
+    50% { transform: translateY(0px) }
+    75% { transform: translateY(10px) }
+    100% { transform: translateY(0) }
+  }
