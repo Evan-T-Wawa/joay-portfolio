@@ -8,7 +8,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-	<title> Space-Holder </title>
+	<title> Joey Portfolio </title>
 </head>
 <body>
 
@@ -28,6 +28,10 @@
 			<li><a href="missing-media.html" class="nav-item Chonburi grey hover-underline-animation">graphic</a></li>
 			<li><a href="missing-media.html" class="nav-item Chonburi grey hover-underline-animation">contect</a></li>
 		  </ul>
+
+		  <a href="javascript:void(0);" onclick="navTrigger()">
+			<img src="assets/Nav-button.png" class="nav-button">
+		  </a>
 	</div>
 
 
@@ -38,6 +42,17 @@
 		<p class="off-white Courier slogan">dream beyond the stars.</p>
 		<img src="assets/Arrow.png" alt="Down Arrow" class="title-arrow">
 	</div>
+
+	<script>
+		function navTrigger() {
+		  var x = document.getElementById("myLinks");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+		</script>
 
 </body>
 </html>

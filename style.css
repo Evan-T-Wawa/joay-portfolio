@@ -1,5 +1,6 @@
 body{
     background-color: #121439;
+    padding: 0;
 }
 
 /*fonts*/
@@ -35,11 +36,14 @@ body{
 .header{
     display: flex;
     position: sticky;
+    width: 100%;
     top: 0px;
     justify-content: space-between;
     background-color: #121439;
     height: 95px;
     z-index: 99;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .logo{
@@ -75,6 +79,10 @@ body{
     width: 50%;
     margin-top: 40px;
     margin-right: 8%;
+}
+
+.nav-button{
+    display: none;
 }
 
 .nav-item{
@@ -122,57 +130,7 @@ body{
     animation-play-state: paused; 
 }
 
-/*nov bar animation*/
-.hover-underline-animation {
-    display: inline-block;
-    position: relative;
-  }
-  
-  .hover-underline-animation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: -3px;
-    left: 0;
-    background-color: #B5C7E8;
-    transition: transform 0.25s ease-out;
-  }
-  
-  .hover-underline-animation:hover::after {
-    transform: scaleX(1);
-  }
-  
-  .hover-underline-animation.center::after {
-    transform-origin: bottom center;
-  }
-  
-  .hover-underline-animation.center:hover::after {
-    transform-origin: bottom center;
-  }
-
-  .nav-item:hover{
-    color: #B5C7E8;
-  }
-
-  /*arrow wobble*/
-
-  .title-arrow:hover {
-    animation-play-state: running;
-    animation-duration: 1.5s;
-  }
-
-  @keyframes spin {
-    0% { transform: translateY(0) }
-    25% { transform: translateY(5px) }
-    50% { transform: translateY(0px) }
-    75% { transform: translateY(10px) }
-    100% { transform: translateY(0) }
-  }
-
   /*small screen version*/
-
   @media screen and (max-width: 1280px) {
     .logo-text-large{
         display: none;
@@ -221,8 +179,25 @@ body{
   }
 
   @media screen and (max-width: 800px){
-    body{
-        background-color: white;
+    
+    .nav-bar{
+        display: none;
     }
+
+    .nav-button{
+        position: absolute;
+        top: 20px; right: 10px;
+        display: block;
+        width: 58px;
+        height: 50px;
+        margin-right: 40px;
+        margin-top: 20px;
+    }
+
+    .title{
+        margin-top: 150px;
+        zoom: 0.6;
+    }
+
 
   }
